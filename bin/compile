@@ -78,5 +78,3 @@ unzip ./jboss-5.1.0.GA-jdk6.zip
 status "Moving JBoss to home folder"
 mv jboss-5.1.0.GA $HOME/
 
-status "installing openjdk"
-sudo apt-get install -y openjdk6
