@@ -11,7 +11,9 @@ sudo apt-get update
 sudo apt-get install -fy build-essential zlib1g-dev 
 
 status "adding JDK6"
-sudo apt-get install -fy openjdk6
+cp /var/vcap/packages/buildpack_cache/openjdk-1.6.0_27.tar.gz ~/
+cd
+tar zxvf ./openjdk-1.6.0_27.tar.gz
 
 if [ $release = "trusty" ]; then
     # We need libssl-dev to compile nginx on trusty
